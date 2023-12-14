@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokédex</title>
+    <link rel="icon" type="image/x-icon" href="img/icons/ball.png">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="openeddex.css">
+    <link rel="stylesheet" href="fonts.css">
+    <link rel="stylesheet" href="responsive.css">
+
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+
+</head>
+
+<body onload="loadPokemon()">
+
+    <header>
+        <img class="header-image" src="img/headline.png">
+    </header>
+
+    <div id="pokedex"></div>
+
+    <div id="infoCard"></div>
+
+    <div class="button-div">
+        <button class="button-30" onclick="loadPokemon()"> Load more Pokémon </button>
+    </div>
+
+    <span onclick="showCredits()" id="info" class="info cross"> credits </span>
+
+</body>
+
+<footer class="d-none" id="footer">
+    <div class="credits-close">
+        <span>Artwork:</span>
+        <span class="cross" onclick="closeCredits()"> Close </span>
+    </div>
+    <div class="credits">
+        <div class="links">
+            <a href="https://www.flaticon.com/free-icons/pokemon" title="pokemon icons">Pokéball created by Smashicons -
+                Flaticon</a>
+            <a href="https://www.flaticon.com/de/kostenlose-icons/pfeile" title="pfeile Icons">Arrows created by
+                IdeaGrafc -
+                Flaticon</a>
+            <a href="https://www.flaticon.com/free-icons/turn-off" title="turn-off icons">Turn-off icon created by
+                Fathema
+                Khanom - Flaticon</a>
+        </div>
+    </div>
+</footer>
+
+</html>

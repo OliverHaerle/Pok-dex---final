@@ -1,0 +1,102 @@
+<div id="overarching-container" class="overarching-container">
+    <div class="left-page-upper-decoration">
+        <div class="big-blue-light"></div>
+        <div class="three-small-lights">
+            <div class="red-light"></div>
+            <div class="green-light"></div>
+            <div class="yellow-light"></div>
+        </div>
+    </div>
+    <div class="outer-div-for-border">
+        <div class="encompassing-container">
+            <div class="left-page">
+                <div class="image-plus-decoration">
+                    <div class="small-red-lights-image-container">
+                        <div class="small-red-lights-image"></div>
+                        <div class="small-red-lights-image"></div>
+                    </div>
+                    <div class="wrap-around-image crt-effect">
+                        <img id="pokeImage" class="big-picture" src="${pokeImage}">
+                        <div class="pokemon-name-banner">
+                            <span> ${capitalizedPokemonName} </span>
+                            <span> #${i} </span>
+                        </div>
+                        <div class="red-light-and-stripes-image">
+                            <div class="red-light-image"></div>
+                            <div class="stripes-container">
+                                <div class="stripes-image"></div>
+                                <div class="stripes-image"></div>
+                                <div class="stripes-image"></div>
+                                <div class="stripes-image"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="left-page-lower-decoration">
+                    <div class="circlethinbuttons-rectangle">
+                        <div class="greycircle-thinbuttons">
+                            <div class="grey-circle"></div>
+                            <div class="thin-buttons">
+                                <div onclick='showShiny(${i})' class="thin-red-button pointer"> Shiny </div>
+                                <div onclick='showRegular(${i})' class="thin-blue-button pointer"> Normal </div>
+                            </div>
+                        </div>
+                        <div class="next-previous-mon-container">
+                            <img onclick="previousPokemon(${i})" src="img/icons/left.png" class="previous-mon-button">
+                            <img onclick="nextPokemon(${i})" src="img/icons/right.png" class="next-mon-button">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hinge">
+                <div class="hinge-block">
+                    <div class="hinge-line"></div>
+                    <div class="hinge-line"></div>
+                </div>
+                <div class="hinge-block">
+                    <div class="hinge-line"></div>
+                    <div class="hinge-line"></div>
+                </div>
+            </div>
+            <div class="right-page">
+                <div class="display-and-buttons">
+                    <div class="green-display crt-effect">
+                        <div class="">
+                            <div id="pokeinfo" class="pokeinfo pointer-hover">
+                                <span class="info-span"> Type: ${TypeOne}${TypeTwo ? ' / ' + TypeTwo : ''}</span> <br>
+                                <span class="info-span"> Height: ${pokemon[i - 1]['height']}0 cm</span>
+                                <span class="info-span"> Weight: ${weightinKG}kg</span>
+                                <span class="info-span"> Possible Abilities: <br> ${ability1}${ability2 ? ' / ' +
+                                    ability2 :
+                                    ''}${ability3 ? ' / ' + ability3 : ''}</span>
+                            </div>
+                            <div id="pokestats" class="opacity-zero-percent">
+                                <canvas id="show-stats"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="various-buttons">
+                    <div class="greenredbutton-leftrightbutton">
+                        <div class="green-red-button">
+                            <div class="red-light"></div>
+                            <div class="green-light"></div>
+                        </div>
+                        <div class="left-right-button">
+                            <img onclick="nextInfo()" src="img/icons/left.png" class="left-button">
+                            <img onclick="previousInfo()" src="img/icons/right.png" class="right-button">
+                        </div>
+                    </div>
+                    <div class="misc-buttons">
+                        <div class="thin-buttons">
+                            <div onclick="hideStats()" class="thin-red-button pointer">Stats</div>
+                            <div onclick="hideInfo()" class="thin-blue-button pointer">Info</div>
+                        </div>
+                        <img onclick="closeDex()" class="cross" src="img/icons/cross.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+`;
